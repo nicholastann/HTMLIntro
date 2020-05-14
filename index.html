@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <script type="text/javascript" src="js/global.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>New Contract</title>
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body onload="f();">
+<div class="content">
+    <ul>
+        <li><a class="active" href="index.html" tabindex="2">Contracts</a></li>
+        <li><a href="i2.html" tabindex="3">Amazons</a></li>
+        <li><a href="i6.html" tabindex="5">Sorting Visualized</a></li>
+        <li><a href="i7.html" tabindex="5">Recursion</a></li>
+        <li><a href="i9.html" tabindex="5">Primes</a></li>
+</ul>
+
+
+        <div id="HomePage">
+                <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+                        <div class="wrapper wrapper--w780">
+                            <div class="card card-3">
+                                <div class="card-body">
+                                    <h2 class="title">Manage Contracts</h2>               
+                                    <input class="input--style-3" type="text" placeholder="Search for Contracts.." id="Search" onkeyup="goSearch()" title="Type in a Contract">
+                                    <div class="limiter">
+                                            <div class="container-table100">
+                                                <div class="wrap-table100">
+                                                        <div class="table">
+                                    
+                                                            <div class="row header">
+                                                                <div class="cell">
+                                                                    Serial #
+                                                                </div>
+                                                                <div class="cell">
+                                                                    Title
+                                                                </div>
+                                                                <div class="cell">
+                                                                    Company Name
+                                                                </div>
+                                                                <div class="cell">
+                                                                        
+                                                                    </div>
+                                                            </div>
+                                    
+                                                            <div class="row" id= "1">
+                                                                <div class="cell" data-title="Full Name">
+                                                                    0001
+                                                                </div>
+                                                                <div class="cell" data-title="Age">
+                                                                    Applebottom
+                                                                </div>
+                                                                <div class="cell" data-title="Job Title">
+                                                                    iOS Developer
+                                                                </div>
+                                                                <div class="cell" data-title="Location">
+                                                                        <td><button class="btn btn--pill btn--green" onclick="delRow(1)"> Delete </button></td>
+                                                                </div>
+                                                            </div>
+                                    
+                                                
+                                    
+                                                            <div class="row" id= "2">
+                                                                <div class="cell" data-title="Full Name">
+                                                                    0002
+                                                                </div>
+                                                                <div class="cell" data-title="Age">
+                                                                    Jeans
+                                                                </div>
+                                                                <div class="cell" data-title="Job Title">
+                                                                    Graphic Designer
+                                                                </div>
+                                                                <div class="cell" data-title="Location">
+                                                                        <td><button class="btn btn--pill btn--green" onclick="delRow(2)"> Delete </button></td>
+                                                                </div>
+                                                            </div>
+                                    
+                                                            <div class="row" id= "3">
+                                                                <div class="cell" data-title="Full Name">
+                                                                    0003
+                                                                </div>
+                                                                <div class="cell" data-title="Age">
+                                                                    Jeans
+                                                                </div>
+                                                                <div class="cell" data-title="Job Title">
+                                                                    Photographer
+                                                                </div>
+                                                                <div class="cell" data-title="Location">
+                                                                        <td><button class="btn btn--pill btn--green" onclick="delRow(3)"> Delete </button></td>
+                                                                </div>
+                                                            </div>
+                                    
+                                                            <div class="row" id= "4">
+                                                                <div class="cell" data-title="Full Name">
+                                                                        0004
+                                                                </div>
+                                                                <div class="cell" data-title="Age">
+                                                                    Boots
+                                                                </div>
+                                                                <div class="cell" data-title="Job Title">
+                                                                    iOS Developer
+                                                                </div>
+                                                                <div class="cell" data-title="Location">
+                                                                        <td><button class="btn btn--pill btn--green" onclick="delRow(4)"> Delete </button></td>
+                                                                </div>
+                                                            </div>
+                                    
+                                                            <div class="row" id= "5">
+                                                                <div class="cell" data-title="Full Name">
+                                                                    0005
+                                                                </div>
+                                                                <div class="cell" data-title="Age">
+                                                                    Withthefur
+                                                                </div>
+                                                                <div class="cell" data-title="Job Title">
+                                                                    Project Manager
+                                                                </div>
+                                                                <div class="cell" data-title="Location">
+                                                                        <td><button class="btn btn--pill btn--green" onclick="delRow(5)"> Delete </button></td>
+                                                                </div>
+                                                            </div>
+                                    
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn--pill btn--green"  onclick="NewContract()"> + Create A New Contract </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+                </div>
+
+                <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+                        <div class="wrapper wrapper--w780">
+                            <div class="card card-3">
+                                <div class="card-heading"></div>
+                                <div class="card-body">
+                                    <h2 class="title">Edit Contract</h2>
+                                    <form action="info.php" method="post">
+                                        <div class="input-group">
+                                            <input class="input--style-3" id="Serial Number" type="number" placeholder="Serial Number" name="Serial Number">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3" id="Title" type="text" placeholder="Title" name="Title">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3" id="ComName" type="text" placeholder="Copany Name" name="Company Name">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3" id="ConAdr" type="text" placeholder="Contact Address" name="Contact Address">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3" id="ConName" type="text" placeholder="Contact Name" name="Contact Name">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3 js-datepicker" id="Start" type="date" placeholder="Start" name="Start">
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3 js-datepicker" id="End" type="date" placeholder="End" name="End">
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3" id="Email" type="text" placeholder="Email" name="Email">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="input--style-3" id="Notes" type="text" placeholder="Notes" name="Notes">
+                                        </div>                                      
+                                        <div class="p-t-10">
+                                            <button class="btn btn--pill btn--green" onclick="SaveContract()" name="submit2" type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    
+                    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+                            <div class="wrapper wrapper--w780">
+                                <div class="card card-3">
+                                    <div class="card-heading3"></div>
+                                    <div class="card-body">
+                                        <h2 class="title">New Contract</h2>
+                                        <form method="POST">
+                                            <div class="input-group">
+                                                <input class="input--style-3" id="NewTitle" type="text" placeholder="Title" name="NewTitle">
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-3" id="NewComName" type="text" placeholder="Copany Name" name="NewComName">
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-3" id="NewConAdr" type="text" placeholder="Contact Address" name="NewConAddress">
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-3" id="NewConName" type="text" placeholder="Contact Name" name="NewConName">
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-3 js-datepicker" type="text" id="NewStart" placeholder="Start" name="NewStart">
+                                                <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-3 js-datepicker" id="NewEnd" type="text" placeholder="End" name="NewEnd">
+                                                <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-3" id="NewEmail" type="text" placeholder="Email" name="NewEmail">
+                                            </div>
+                                            <div class="input-group">
+                                                <input class="input--style-3" id="NewNotes" type="text" placeholder="Notes" name="NewNotes">
+                                            </div>                                      
+                                            <div class="p-t-10">
+                                                <button class="btn btn--pill btn--green" onclick="SaveNewContract()" id="NewTitle" type="submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </div>        
+</div>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+        <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
